@@ -15,7 +15,7 @@ RUN mvn clean package
 FROM tomcat:9.0
 
 # Copy the WAR file from the first stage
-COPY --from=build /app/target/DataFetch.war /usr/local/tomcat/webapps/
+COPY --from=build /app/target/my-servlet-project.war /usr/local/tomcat/webapps/
 
 # Change Tomcat to use port 9090 instead of 8080
 RUN sed -i 's/port="8080"/port="9090"/g' /usr/local/tomcat/conf/server.xml
