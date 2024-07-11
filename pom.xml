@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>DataFetch</artifactId>
+    <artifactId>my-servlet-project</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -18,7 +18,7 @@
     </dependencies>
 
     <build>
-        <finalName>DataFetch</finalName>
+        <finalName>my-servlet-project</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
