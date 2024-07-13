@@ -12,7 +12,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-        String jsonResponse = "{\"content\": \"Hello World Version 1\"}";
+        String jsonResponse = "{\"content\": \"Hello World\"}";
         response.getWriter().write(jsonResponse);
     }
 }
