@@ -46,7 +46,7 @@
 </head>
 <body>
     <div class="container">
-        <button class="button" onclick="fetchData('/my-servlet-project/hello')">Hello World Version 1</button>
+        <button class="button" onclick="fetchData('/my-servlet-project/hello')">Hello World</button>
         <button class="button" onclick="fetchData('/my-servlet-project/hello-v2')">Hello World Version 2</button>
         <div id="result"></div>
     </div>
