@@ -43,13 +43,13 @@ pipeline
         stage("Building images")
         {
             steps {
-                sh "sudo docker build -t datafetch-image:${BUILD_NUMBER} /var/lib/jenkins/workspace/DataFetch-PipeLine"
+                sh "sudo docker build -t datafetch-image:V1 /var/lib/jenkins/workspace/DataFetch-PipeLine"
             }
         }
         stage("Running image")
         {
             steps {
-                sh "sudo docker run -d --name datafetch-container -p 9090:9090 datafetch-image:${BUILD_NUMBER}"
+                sh "sudo docker run -d --name datafetch-container -p 9090:9090 datafetch-image:V1"
             }
         }
     }
